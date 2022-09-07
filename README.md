@@ -6,7 +6,7 @@ PAHDecomp ([Donnan et al. 2022]()) is a tool for modelling mid-infrared spectra 
 The fit is achieved using MCMC sampling from [NUMPYRO](https://github.com/pyro-ppl/numpyro). Specifically we use the NUTS sampler which is a Hamiltonian Monte Carlo allowing parallelisation to speed up computation time. This can even by ran on GPUs or TPUs. 
 
 An example fit is shown below 
-![alt text](https://github.com/FergusDonnan/PAHDecomp/MockDataFig.png?raw=true)
+![alt text](./MockDataFig.png?raw=true)
 
 
 ## Installation
