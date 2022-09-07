@@ -10,12 +10,18 @@ An example fit is shown below to mock data where the left panel shows a galaxy h
 
 
 ## Installation
+To install simply download the files in the repository and place in some folder. To install any packages required for the code to work, from the terminal enter the directory and run: pip install -r requirements.txt
 
 
 
 ## Running the Code
 
 This code can be ran in two ways. Either by simply modelling a single spectrum of a galaxy or modelling multiple spectra simultaneously, extracted from different sized apertures centered on a given nucleus where the nuclear component is shared by each spectrum. 
+
+To specify the spectrum to fit, within PAHDecomp.py towards the bottom of the file enter the object name to the 'objs' array and its assoiciated redshift. For example to fit to 'Arp 200.txt' within the 'Data' folder set: 
+objs=['Arp 220']
+zs = [0.0] 
+where zs specifies the redshift, in this case the spectrum is already rest frame. Multiple objects can be added to the list to run the fit on each one sequentially. To run the code type python 'PAHDecomp.py' in the terminal.
 
 ### Changing the extinction or nuclear silicate template
 To run the model with a different extinction law for the star-forming component add the file to the 'Extinction Curves' folder and at the top of 'SetupFit.py' make sure the file is read in. Similarly to change the silicate profile for the nuclear component, add the file to the 'Nuclear Templates' folder and make sure it is read in in the 'SetupFit.py' file. The ice/CH templates can also be changed in the 'Ice Templates' folder.
