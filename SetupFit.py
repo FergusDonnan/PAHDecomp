@@ -83,8 +83,8 @@ class Fit():
             lam, flux, flux_err = np.loadtxt(filename, unpack = True, usecols=[0,1,2,], skiprows=1)
 
             
-        flux /= 1000
-        flux_err /=1000
+      #  flux /= 1000
+       # flux_err /=1000
 
         lam = lam/(1.0+z)
         scale = np.mean(flux[lam<=max(lam)])
