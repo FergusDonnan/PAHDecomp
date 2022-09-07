@@ -1,0 +1,5 @@
+Section,Component,Name,Description,Value,+Error,-Error,Prior,Prior Type,Fixed
+Nucleus,Nucleus Continuum,x1,Knots,0.0892820033403477,0.029483634171283662,0.025715254072671764,"[0.0, 1.0]",Uniform,False
+Nucleus,Nucleus Continuum,x3,Knots,1.1661039661577317,0.15442214283058853,0.11182458212023816,"[1.0, 10.0]",Uniform,False
+Nucleus,Ice,τ_Ice,Ice Opt Depth,0.3558246849760014,0.08583446993732124,0.07352414854905459,"[0.0, 2.0]",Uniform,False
+Nucleus,Sil,τ_Sil(Nuc),Nucleus Opt Depth,5.319871166880001,1.0134683393213226,0.7120975902142961,"[0.0, 10.0]",Uniform,False
