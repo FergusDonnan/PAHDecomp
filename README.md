@@ -26,6 +26,13 @@ where zs specifies the redshift, in this case the spectrum is already rest frame
 ### Changing the extinction or nuclear silicate template
 To run the model with a different extinction law for the star-forming component add the file to the 'Extinction Curves' folder and at the top of 'SetupFit.py' make sure the file is read in. Similarly to change the silicate profile for the nuclear component, add the file to the 'Nuclear Templates' folder and make sure it is read in in the 'SetupFit.py' file. The ice/CH templates can also be changed in the 'Ice Templates' folder.
 
+### Changing the Priors on the decomposition
+The decomposition is influenced by two main priors, the extinction of the star-forming component being realtively low and the ratio of the star-forming continuum to the total PAH flux (i.e tying the strength of the star-forming continuum to the strength of the PAHs). These can be changed in the code. 
+
+To change the star-forming extinction prior, edit line 172 of SetupFit.py where currently a Truncated Normal prior is specified with [Lower Lim, Upper Lim, Mean, Std]  = [0.0, 50.0, 0.0, 1.1]. 
+
+To change the prior on the ratio of the PAH flux to star-forming continuum, edit line 153 of PAHDecomp.py where currently a normal prior is set with a mean = 1.92, Std = 10. To more strongly tie the star-forming continuum to the PAH flux reduce the Std to 0.56 which is what we found for the [HC+20](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4614H/abstract) star-forming sample (I wouldn't recommend changing the mean).
+
 
 ## Output
 
