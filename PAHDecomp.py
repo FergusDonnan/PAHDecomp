@@ -150,7 +150,7 @@ def numpyro_model(data_list, parameters_list, lines_indx, pah_indx, cont_indx, e
         area_cont = jnp.trapz(Ext*cont_SF, x_data)
         area_pah = jnp.trapz(Ext*pahs, x_data)
         ratio = area_pah/area_cont
-        ratio_pr += jnp.log(jnp.exp(-0.5*((ratio - 1.92)/10.0)**2)) #0.56 2.8
+        ratio_pr += jnp.log(jnp.exp(-0.5*((ratio - 1.92)/10.0)**2)) # Mean of 1.92, Std of 10.0 (Can change to be tighter prior)
             
 
             
