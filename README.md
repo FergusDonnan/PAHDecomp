@@ -31,7 +31,7 @@ The decomposition is influenced by two main priors, the extinction of the star-f
 
 To change the star-forming extinction prior, edit line 172 of SetupFit.py where currently a Truncated Normal prior is specified with [Lower Lim, Upper Lim, Mean, Std]  = [0.0, 50.0, 0.0, 1.1]. 
 
-To change the prior on the ratio of the PAH flux to star-forming continuum, edit line 153 of PAHDecomp.py where currently a normal prior is set with a mean = 1.92, Std = 10. To more strongly tie the star-forming continuum to the PAH flux reduce the Std to 0.56 which is what we found for the [HC+20](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4614H/abstract) star-forming sample (I wouldn't recommend changing the mean).
+To change the prior on the ratio of the PAH flux to star-forming continuum, edit line 153 of PAHDecomp.py where currently a normal prior is set with a mean = 1.92, Std = 10 (We used a wide prior in ([Donnan et al. 2022a]()) and a tighter one in  [Donnan et al. 2022b](https://ui.adsabs.harvard.edu/abs/2022arXiv221004647D/abstract)). To more strongly tie the star-forming continuum to the PAH flux reduce the Std to 0.56 which is what we found for the [HC+20](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4614H/abstract) star-forming sample (I wouldn't recommend changing the mean).
 
 
 ## Output
