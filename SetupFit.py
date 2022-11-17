@@ -170,7 +170,7 @@ class Fit():
         self.parameters = self.parameters.append({ 'Section': 'Continuum', 'Component': 'Continuum','Name': "NTemp",'Description': 'Continuum Temp', 'Value': 0.5, '+Error': 0.0, '-Error': 0.0,'Prior': [0.0, 1.0],'Prior Type': 'Uniform','Fixed': False}, ignore_index=True)
 
         self.parameters = self.parameters.append({ 'Section': 'Extinction', 'Component': 'Sil','Name': "\u03C4_Sil(SF)",'Description': 'Silicate Opt Depth', 'Value': 0.001, '+Error': 0.0, '-Error': 0.0,'Prior': [0.0, 50.0, 0.0, 1.1],'Prior Type': 'TruncatedNormal','Fixed': False}, ignore_index=True)
-
+                                                                                                                                                                                                                    # [Lower Lim, Upper Lim, Mean, Std] 
         #Extract sampled parameters
         sampled_parameters = self.parameters.loc[(self.parameters["Fixed"] == False)]
         init_pos = sampled_parameters['Value'].to_numpy()
