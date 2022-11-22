@@ -46,3 +46,21 @@ The output from the fit will be written to the 'Results' directory which will co
 ## Citation
 If you use this code please cite ([Donnan et al. 2022a](https://ui.adsabs.harvard.edu/abs/2022arXiv221109628D/abstract)):
 
+
+@ARTICLE{2022arXiv221109628D,
+       author = {{Donnan}, F.~R. and {Rigopoulou}, D. and {Garc{\'\i}a-Bernete}, I. and {Pereira-Santaella}, M. and {Alonso-Herrero}, A. and {Roche}, P.~F. and {Aalto}, S. and {Hern{\'a}n-Caballero}, A. and {Spoon}, H.~W.~W.},
+        title = "{A Detailed Look at the Most Obscured Galactic Nuclei in the Mid-Infrared}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics - Astrophysics of Galaxies},
+         year = 2022,
+        month = nov,
+          eid = {arXiv:2211.09628},
+        pages = {arXiv:2211.09628},
+archivePrefix = {arXiv},
+       eprint = {2211.09628},
+ primaryClass = {astro-ph.GA},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2022arXiv221109628D},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
